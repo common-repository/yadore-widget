@@ -1,0 +1,74 @@
+/* _variables.scss */
+
+:root {
+
+	// MISC
+
+	--yw-spacer: 1rem;
+	--yw-gutter-x: 1.5rem;
+	--yw-gutter-y: 0;
+	--yw-border-radius: 0.25rem;
+
+	// FONT SIZES
+
+	--yw-font-size-xs: clamp(10px, 0.750rem, 14px);
+	--yw-font-size-sm: clamp(12px, 0.875rem, 16px);
+	--yw-font-size-md: clamp(14px, 1.000rem, 18px);
+	--yw-font-size-lg: clamp(16px, 1.125rem, 20px);
+	--yw-font-size-xl: clamp(18px, 1.250rem, 22px);
+
+	// COLOR
+
+	--yw-color-primary: #0d6efd; // p500
+	--yw-color-secondary: #6c757d; // g600
+	--yw-color-light: #f8f9fa; // g100
+	--yw-color-border: #dee2e6; // g300
+
+	// TEXT
+
+	--yw-text-font-family: inherit;
+	--yw-text-font-weight: 400;
+	--yw-text-line-height: 1.5;
+	--yw-text-color: #495057; // g700
+	--yw-text-muted-color: #6c757d; // g500
+
+	// HEADING
+
+	--yw-headings-font-family: inherit;
+	--yw-headings-font-weight: 700;
+	--yw-headings-line-height: 1.25;
+	--yw-headings-color: #212529; // g900
+
+	// LINK
+
+	--yw-link-color: #0d6efd;
+	--yw-link-decoration: none;
+	--yw-link-hover-color: #0a58ca;
+	--yw-link-hover-decoration: underline;
+
+	// INPUT
+
+	--yw-input-background: #fff;
+	--yw-input-border-color: #dee2e6; // g300
+	--yw-input-border-color-focus: #ced4da; // g400
+
+	// BUTTON
+
+	--yw-button-color: #fff;
+	--yw-button-background-primary: #0d6efd; // p500
+	--yw-button-background-primary-hover: #0a58ca; // p600
+	--yw-button-background-secondary: #6c757d; // g600
+	--yw-button-background-secondary-hover: #495057; // g700
+
+	// CARD
+
+	--yw-card-bg: #fff;
+	--yw-card-color: #495057; // g700
+	--yw-card-border: 1px solid var(--yw-color-border);
+	--yw-card-border-radius: var(--yw-border-radius);
+	--yw-card-box-shadow: 0 0.5rem 1.5rem -0.25rem rgba(0, 0, 0, 0.15);
+	--yw-card-box-shadow-hover: 0 1rem 3rem -0.5rem rgba(0, 0, 0, 0.25);
+	--yw-card-spacer-x: 1rem;
+	--yw-card-spacer-y: 1rem;
+	--yw-card-top-hover: -0.25rem;
+}

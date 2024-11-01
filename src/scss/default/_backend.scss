@@ -1,0 +1,15 @@
+/* _backend.scss */
+
+html {
+
+	.block-editor-page {
+
+		.wp-block {
+			max-width: 800px;
+
+			.yw-shortcode .yw-search-form .yw-btn-primary {
+				pointer-events: none;
+			}
+		}
+	}
+}

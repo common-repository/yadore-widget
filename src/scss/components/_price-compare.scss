@@ -1,0 +1,27 @@
+/* _price-compare.scss */
+
+html {
+
+	.block-editor-page .wp-block,
+	.yw-theme-default {
+
+		.yw-shortcode {
+
+			&.yw-price-compare {
+				margin-bottom: var(--yw-spacer);
+
+				// CONTAINER
+
+				.yw-price-compare-inner {
+
+				}
+
+				// CARD
+
+				.card-yw-compare {
+
+				}
+			}
+		}
+	}
+}

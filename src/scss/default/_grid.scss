@@ -1,0 +1,97 @@
+/* _grid.scss */
+
+@mixin col-size($size: "-") {
+
+	.yw-col#{$size}2 {
+		flex: 0 0 auto;
+		width: 16.6666667%;
+	}
+
+	.yw-col#{$size}3 {
+		flex: 0 0 auto;
+		width: 25%;
+	}
+
+	.yw-col#{$size}4 {
+		flex: 0 0 auto;
+		width: 33.33333333%;
+	}
+
+	.yw-col#{$size}6 {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+
+	.yw-col#{$size}12 {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+}
+
+html {
+
+	.block-editor-page .wp-block,
+	.yw-theme-default {
+
+		.yw-shortcode {
+
+			.yw-container-fluid {
+				//padding-right: calc(0.5 * var(--yw-gutter-x));
+				//padding-left: calc(0.5 * var(--yw-gutter-x));
+			}
+
+			.yw-row {
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: calc(-1 * var(--yw-gutter-y));
+				margin-right: calc(-.5 * var(--yw-gutter-x));
+				margin-left: calc(-.5 * var(--yw-gutter-x));
+
+				> * {
+					flex-shrink: 0;
+					width: 100%;
+					max-width: 100%;
+					padding-right: calc(var(--yw-gutter-x) * .5);
+					padding-left: calc(var(--yw-gutter-x) * .5);
+					margin-top: var(--yw-gutter-y);
+				}
+			}
+
+			.yw-col {
+				flex: 1 0 0;
+			}
+
+			.yw-col-auto {
+				flex: 0 0 auto;
+				width: auto;
+			}
+
+			@include col-size("-");
+
+			@media (min-width: 576px) {
+
+				@include col-size("-sm-");
+			}
+
+			@media (min-width: 768px) {
+
+				@include col-size("-md-");
+			}
+
+			@media (min-width: 992px) {
+
+				@include col-size("-lg-");
+			}
+
+			@media (min-width: 1200px) {
+
+				@include col-size("-xl-");
+			}
+
+			@media (min-width: 1400px) {
+
+				@include col-size("-xxl-");
+			}
+		}
+	}
+}

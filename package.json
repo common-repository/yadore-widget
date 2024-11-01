@@ -1,0 +1,24 @@
+{
+  "name": "yadore-widget",
+  "description": "",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "Yadore GmbH",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "@wordpress/block-editor": "^11.7.0",
+    "@wordpress/blocks": "^12.7.0",
+    "@wordpress/i18n": "^4.30.0",
+    "@wordpress/server-side-render": "^4.7.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.1.0",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "ignore-emit-webpack-plugin": "^2.0.6",
+    "mini-css-extract-plugin": "^2.6.1"
+  }
+}

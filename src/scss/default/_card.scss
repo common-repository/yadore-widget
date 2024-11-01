@@ -1,0 +1,209 @@
+/* _card.scss */
+
+html {
+
+	.block-editor-page .wp-block,
+	.yw-theme-default {
+
+		.yw-shortcode {
+
+			.yw-card {
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				min-width: 0;
+				word-wrap: break-word;
+				background-color: var(--yw-card-bg);
+				background-clip: border-box;
+				border: var(--yw-card-border);
+				border-radius: var(--yw-card-border-radius);
+				box-shadow: var(--yw-card-box-shadow);
+				color: var(--yw-card-color);
+				height: 100%;
+				line-height: var(--yw-text-line-height);
+				font-size: var(--yw-font-size-md);
+				transition: all 0.25s ease-in-out;
+				top: 0;
+
+				// CARD LIST
+
+				@media (min-width: 768px) {
+
+					&.yw-card-list {
+						flex-direction: row;
+						align-items: center;
+						padding: 1rem;
+
+						.yw-card-header {
+							padding: 0;
+							flex: 0 0 6rem;
+						}
+
+						.yw-card-body {
+							padding: 0 2rem;
+							flex: 1 1 auto;
+						}
+
+						.yw-card-footer {
+							padding: 0;
+							flex: 0 0 auto;
+
+							p {
+								text-align: right;
+							}
+						}
+
+						.yw-card-header .yw-img-holder {
+							width: 100%;
+						}
+					}
+				}
+
+				&:hover {
+					top: var(--yw-card-top-hover);
+					box-shadow: var(--yw-card-box-shadow-hover);
+				}
+
+				// BASE
+
+				.yw-card-header {
+					padding: var(--yw-card-spacer-y) var(--yw-card-spacer-x);
+					padding-bottom: 0;
+					margin-bottom: 0;
+
+					> :last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				.yw-card-body {
+					flex: 1 1 auto;
+					padding: var(--yw-card-spacer-y) var(--yw-card-spacer-x);
+
+					> :last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				.yw-card-footer {
+					padding: var(--yw-card-spacer-y) var(--yw-card-spacer-x);
+					padding-top: 0;
+
+					> :last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				// CONTENT
+
+				.yw-img-fluidX {
+					// DEPRACTED(?) due yw-img-holder
+					//padding: 1rem; // 0
+					//max-height: clamp(160px, 16rem, 256px); // 16
+					//min-height: clamp(120px, 12rem, 192px);
+					//margin: 0 auto;
+					//width: 100%;
+				}
+
+				.yw-card-title {
+					color: var(--yw-headings-color);
+					font-size: var(--yw-font-size-lg);
+					font-weight: var(--yw-headings-font-weight);
+					margin: 0 0 var(--yw-spacer) 0;
+					font-family: var(--yw-headings-font-family);
+					letter-spacing: normal;
+					text-transform: none;
+					line-height: var(--yw-headings-line-height);
+					padding: 0;
+
+					a {
+						color: inherit;
+						text-decoration: none !important;
+						font-weight: var(--yw-headings-font-weight);
+
+						&:hover,
+						&:focus {
+							color: var(--yw-link-hover-color);
+							text-decoration: none !important;
+						}
+					}
+				}
+
+				.yw-price {
+					margin: 0;
+
+					+ .yw-meta {
+						margin-top: 0.5rem;
+					}
+				}
+
+				.yw-meta {
+					margin: 0;
+				}
+			}
+
+			.yw-compare-card {
+				padding: 0;
+
+				&:hover {
+					top: 0;
+					box-shadow: var(--yw-card-box-shadow);
+				}
+
+				.yw-list-group:not(.fix) {
+					margin: 0;
+					padding: 0 !important;
+					list-style: none !important;
+
+					> :first-child {
+						border-top-width: 0;
+						border-top-left-radius: var(--yw-card-border-radius);
+						border-top-right-radius: var(--yw-card-border-radius);
+					}
+
+					> :last-child {
+						border-bottom-width: 0;
+						border-bottom-right-radius: var(--yw-card-border-radius);
+						border-bottom-left-radius: var(--yw-card-border-radius);
+					}
+
+					.yw-list-group-item {
+						margin: 0;
+						position: relative;
+						padding: calc(0.5 * var(--yw-card-spacer-y)) var(--yw-card-spacer-x);
+						transition: all 0.25s ease-in-out;
+
+						&::before {
+							content: none !important;
+						}
+
+						&:not(:last-of-type) {
+							border-bottom: 1px solid var(--yw-color-border);
+						}
+
+						&:hover {
+							background: var(--yw-color-light);
+						}
+
+						.yw-row {
+							align-items: center;
+						}
+
+						a {
+							color: var(--yw-text-color);
+							text-decoration: none !important;
+							transition: all 0.25s ease-in-out;
+
+							&:hover,
+							&:focus {
+								color: var(--yw-link-hover-color);
+								text-decoration: none !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

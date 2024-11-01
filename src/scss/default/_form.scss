@@ -1,0 +1,104 @@
+/* _form.scss */
+
+html {
+
+	.block-editor-page .wp-block,
+	.yw-theme-default {
+
+		.yw-shortcode {
+
+			// FORM CONTROL
+
+			.yw-form-control[type]:not(.fix) {
+				@extend %form-reset;
+				display: block;
+				width: 100%;
+				background-color: var(--yw-input-background);
+				border-color: var(--yw-input-border-color);
+
+				&:focus {
+					background-color: var(--yw-input-background);
+					border-color: var(--yw-input-border-color-focus);
+				}
+			}
+
+			// FORM SELECT
+
+			.yw-form-select:not(.fix) {
+				@extend %form-reset;
+				display: block;
+				width: 100%;
+				background-color: var(--yw-input-background);
+				border-color: var(--yw-input-border-color);
+				padding-right: 2.25rem;
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+				background-repeat: no-repeat;
+				background-position: right 0.75rem center;
+				background-size: 16px 12px;
+
+				&:focus {
+					background-color: var(--yw-input-background);
+					border-color: var(--yw-input-border-color-focus);
+				}
+			}
+
+			// BTN
+
+			.yw-btn:not(.fix) {
+				@extend %form-reset;
+				display: inline-block;
+				width: auto;
+				background-color: transparent;
+				border-color: transparent;
+				cursor: pointer;
+				text-align: center;
+				color: var(--yw-button-color);
+
+				&:hover,
+				&:focus {
+					color: var(--yw-button-color);
+
+					&:not(:focus-visible) {
+						outline: 0;
+					}
+				}
+
+				.disabled,
+				&[disabled],
+				&[disabled]:hover,
+				&[disabled]:focus {
+					@extend %form-reset;
+					opacity: 0.5;
+					filter: grayscale(1);
+					color: var(--yw-button-color);
+					background-color: var(--yw-text-muted-color);
+					border-color: var(--yw-text-muted-color);
+				}
+			}
+
+			// BTN PRIMARY
+
+			.yw-btn-primary:not(.fix) {
+				background-color: var(--yw-button-background-primary);
+				border-color: var(--yw-button-background-primary);
+
+				&:hover,
+				&:focus {
+					background-color: var(--yw-button-background-primary-hover);
+					border-color: var(--yw-button-background-primary-hover);
+				}
+			}
+
+			.yw-btn-secondary:not(.fix) {
+				background-color: var(--yw-button-background-secondary);
+				border-color: var(--yw-button-background-secondary);
+
+				&:hover,
+				&:focus {
+					background-color: var(--yw-button-background-secondary-hover);
+					border-color: var(--yw-button-background-secondary-hover);
+				}
+			}
+		}
+	}
+}

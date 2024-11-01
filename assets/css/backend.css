@@ -1,0 +1,205 @@
+/* SETTINGS */
+
+.yadore_widget_feed_page_yadore_widget #wpcontent {
+	padding: 0;
+	background: #f6f6f6;
+	min-height: calc( 100vh - 32px );
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap {
+	margin: 0;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header {
+	background: #000;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-brand {
+	padding: 1rem 2rem;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-logo {
+	height: 3rem;
+	margin: 0;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0 0 0 3.5rem;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav li {
+	margin: 0;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav li:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav a {
+	color: #fff;
+	font-size: 1rem;
+	display: block;
+	text-decoration: none;
+	padding: 1rem 1rem;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav a.active,
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav a:hover,
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav a:focus {
+	text-decoration: none;
+	color: #ffec40;
+	box-shadow: 0 -0.125rem 0 #ffec40 inset;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-header .yadore-nav a span {
+	display: none;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form {
+	padding: 1rem 2rem;
+	color: #000;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #000;
+	display: inline-block;
+	box-shadow: 0 -0.5rem 0 #ffec40 inset
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form th label {
+	font-size: 1rem;
+	line-height: 1.25;
+	color: #000;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form td label {
+	font-size: 0.875rem;
+	line-height: 1.25;
+	color: #666;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form .submit .button-primary {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #fff;
+	background: #000;
+	border: none;
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.5rem;
+}
+
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form .submit .button-primary:hover,
+.yadore_widget_feed_page_yadore_widget .yadore-wrap > form .submit .button-primary:focus {
+	background: #000;
+	color: #ffec40;
+}
+
+/* FEED: FORM */
+
+.yadore-feed-form {
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.yadore-feed-form h4 {
+	color: #000;
+	font-size: 1rem;
+	margin: 0 0 0.5rem 0;
+}
+
+.yadore-feed-form .field-group:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.yadore-feed-form .field-group label {
+	width: 12rem;
+	display: inline-block;
+}
+
+/* FEED: PEVIEW */
+
+.yadore-feed-preview {
+
+}
+
+.yadore-feed-preview h4 {
+	color: #000;
+	font-size: 1rem;
+	margin: 0 0 0.5rem 0;
+}
+
+.feed-preview .row,
+.feed-preview .yw-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: -1.5rem;
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+}
+
+.feed-preview .row > *,
+.feed-preview .yw-row > * {
+	padding: 0 0.75rem;
+	margin-top: 1.5rem;
+	box-sizing: border-box;
+	flex: 0 0 auto;
+}
+
+.feed-preview .row .card,
+.feed-preview .yw-row .yw-card {
+	border: 1px solid #c3c4c7;
+	border-radius: 0.25rem;
+	padding: 1rem;
+	width: 220px;
+}
+
+.feed-preview .row .card img,
+.feed-preview .yw-row .yw-card img{
+	max-width: 100%;
+	max-height: 8rem;
+	height: auto;
+	display: block;
+}
+
+/* MISC */
+
+.yw-shortcode-preview {
+	display: block;
+	background: #f6f7f7;
+	padding: 0.5rem;
+	border: 1px solid #dcdcde;
+	user-select: all !important;
+}
+
+.yw-shortcode-preview:hover,
+.yw-shortcode-preview:focus {
+	background: #fff;
+	border-color: #000;
+}
+
+.yw-shortcode-docs {
+	line-height: 1.5;
+	background: #f6f7f7;
+	padding: 0.5rem;
+	border: 1px solid #dcdcde;
+}
+
+.yw-shortcode-docs strong {
+	display: block;
+}
+
+.yw-shortcode-docs span {
+	display: block;
+	color: #999;
+	/*padding-left: 0.5rem;*/
+}

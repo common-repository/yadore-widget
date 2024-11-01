@@ -1,0 +1,27 @@
+/* _search.scss */
+
+html {
+
+	.yw-shortcode {
+
+		&.yw-search {
+			margin-bottom: var(--yw-spacer);
+
+			// FORM
+
+			.yw-search-form {
+				margin-bottom: var(--yw-spacer);
+			}
+
+			// RESULTS
+
+			.yw-search-results {
+				margin-top: var(--yw-spacer);
+
+				> p {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

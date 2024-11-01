@@ -1,0 +1,46 @@
+/* _misc.scss */
+
+html {
+
+	.block-editor-page .wp-block,
+	.yw-theme-default {
+
+		.yw-shortcode {
+
+			.yw-price {
+				padding: 0;
+
+				.yw-price-value {
+					color: var(--yw-headings-color);
+					font-size: var(--yw-font-size-lg);
+					font-weight: var(--yw-headings-font-weight);
+				}
+
+				.yw-price-currency {
+					position: relative;
+					top: -0.25em; // 0.5
+					text-transform: uppercase;
+					color: var(--yw-text-muted-color);
+					font-size: var(--yw-font-size-xs);
+					font-weight: var(--yw-text-font-weight);
+				}
+			}
+
+			.yw-meta {
+				padding: 0;
+
+				.yw-meta-shop-name {
+					color: var(--yw-text-muted-color);
+					font-size: var(--yw-font-size-sm);
+					font-weight: var(--yw-text-font-weight);
+				}
+
+				.yw-meta-shop-logo {
+					display: block;
+					max-width: 6rem;
+					height: auto;
+				}
+			}
+		}
+	}
+}

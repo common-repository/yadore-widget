@@ -1,0 +1,22 @@
+/* style.scss */
+
+@import "variables";
+
+@import "default/reset";
+@import "default/grid";
+@import "default/base";
+@import "default/form";
+@import "default/backend";
+
+@import "default/misc";
+@import "default/card";
+
+@import "components/feed";
+@import "components/price-compare";
+@import "components/search";
+
+@import "bootstrap/bootstrap";
+
+* {
+	//box-shadow: 0 0 0 1px red;
+}
